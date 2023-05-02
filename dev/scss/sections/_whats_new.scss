@@ -1,0 +1,12 @@
+/* =============
+    what's new 1
+============= */
+.new{
+
+    ul{
+        @include md{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

@@ -322,14 +322,22 @@ template {
 /* =============
     Base
 ============= */
-.header-footer-grid {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: "header-footer";
-}
-
 .large-images {
   width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  padding: 20px;
 }
 
 /* =============
@@ -362,6 +370,11 @@ textarea {
 /* =============
     Header
 ============= */
+header .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* =============
     Footer
 ============= */
@@ -388,3 +401,85 @@ footer .container .arrow3 {
 footer .container .phone3 {
   grid-area: phone3;
 }
+
+/* =============
+    header
+============= */
+/* =============
+    footer
+============= */
+@media (min-width: 768px) {
+  footer .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+/* =============
+    divider 1
+============= */
+@media (min-width: 768px) {
+  .divider.container {
+    grid-template-columns: 10% auto 10%;
+  }
+}
+
+/* =============
+    divider 2
+============= */
+@media (min-width: 768px) {
+  .divider2.container {
+    grid-template-columns: 30% auto 30%;
+  }
+}
+
+/* =============
+   image collage
+============= */
+@media (min-width: 768px) {
+  .collage ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .collage ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .collage ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+/* =============
+    vac info
+============= */
+@media (min-width: 768px) {
+  .info ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =============
+    search
+============= */
+/* =============
+    what's new 1
+============= */
+@media (min-width: 768px) {
+  .new ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* =============
+   what's new 2
+============= */

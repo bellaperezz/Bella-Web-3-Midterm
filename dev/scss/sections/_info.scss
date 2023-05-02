@@ -1,0 +1,12 @@
+/* =============
+    vac info
+============= */
+.info{
+
+    ul{
+        @include md{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

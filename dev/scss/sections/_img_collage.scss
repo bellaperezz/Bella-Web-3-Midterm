@@ -1,0 +1,32 @@
+/* =============
+   image collage
+============= */
+.collage{
+
+   ul{
+       @include md{
+           display: grid;
+           grid-template-columns: 50% 50%;
+       }
+   }
+}
+
+.collage{
+
+    ul{
+        @include lg{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+ }
+
+ .collage{
+
+    ul{
+        @include xl{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+ }

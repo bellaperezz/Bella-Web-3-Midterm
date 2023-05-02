@@ -1,0 +1,15 @@
+/* =============
+    divider 2
+============= */
+.divider2{
+
+    &.container{
+
+        @include md{
+
+            grid-template-columns: 30% auto 30%;
+        
+    
+        }
+    }
+}

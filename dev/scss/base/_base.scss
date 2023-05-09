@@ -14,6 +14,19 @@
     grid-template-areas: 
     ". content ."
     ;
+
+    @include xl{
+        grid-template-columns: auto 1140px auto;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1320px auto;
+    }
+
+    .content{
+        grid-area:content;
+    }
+
 }
 
 .content{
@@ -40,6 +53,7 @@
 
 }
 
-.footer {
-    padding: 20px;
- }
+.content-spacing{
+    padding-top:30px;
+    padding-bottom:18px;
+}

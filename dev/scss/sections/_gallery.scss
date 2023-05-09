@@ -1,0 +1,53 @@
+/* =============
+   gallery
+============= */
+.gallery{
+
+   ul{
+       @include md{
+           display: grid;
+           grid-template-columns: 50% auto;
+       }
+
+       @include lg{
+            grid-template-columns: 60% auto;
+       }
+
+       @include xl{
+            grid-template-areas:
+            "g1 g2"
+            "g1 g3";
+
+       }
+
+       li{
+
+            &.img-1{
+
+                @include xl{
+                    grid-area: g1;
+                }
+
+                
+            }
+            
+            &.img-2{
+
+                @include xl{
+                    grid-area: g2;
+                }
+
+            }
+            
+            &.img-2{
+
+                @include xl{
+                    grid-area: g2;
+                }
+
+
+            }
+       }
+   }
+}
+

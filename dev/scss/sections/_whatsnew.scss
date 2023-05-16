@@ -1,37 +1,39 @@
 /* =============
     what's new
 ============= */
-.new{
-
-    ul{
-        @include md{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
-
-.new{
-
-    ul{
-        @include lg{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
-
-.new{
-
-    ul{
-        @include xl{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
-
 .whats-new{
+    margin: 0 0 20px 0;
+
+    @include md{
+        margin: 30px 0 40px 0;
+    }
+
+    @include xl{
+        margin: 50px 0 60px 0;
+        
+    }
+
+    .whats-new-title{
+        h2{
+            font-size: 20px;
+            color: $darkgray;
+            padding: 10px 0 10px 0;
+
+            @include md{
+                font-size: 28px;
+            }
+
+            @include lg{
+                font-size: 32px;
+            }
+
+            @include xl{
+                font-size: 40px;
+            }
+        }
+    }
+
+   
 
     .whats-new-articles{
 
@@ -39,7 +41,8 @@
             display:grid;
             grid-template-columns: 15px auto 15px;
             grid-template-areas:
-            ". articles .";
+            ". articles ."
+            ;
         }
 
         @include xl{
@@ -50,15 +53,21 @@
             grid-template-columns: auto 1320px auto;
         }
 
-        ul{
+        ul.article-grid{
 
+            list-style: none;
+            padding-left: 0;
+
+            display: grid;
+            grid-template-columns: 100%;
+            gap:15px;
+            
 
             @include md{
+                grid-area:articles;
                 display: grid;
                 grid-template-columns: repeat(4,1fr);
-                grid-area: articles;
-
-                grid-template-areas:
+                grid-template-areas: 
                 "a1 a1 a2 a2"
                 "a3 a3 a4 a4"
                 ". a5 a5 .";
@@ -74,10 +83,33 @@
 
             li{
 
+                background-color: $lightgray;
+
                 .container{
+
+                    padding: 15px 0 35px 0;
 
                     @include xl{
                         grid-template-columns: 15 px auto 15 px;
+                    }
+
+                    h3{
+                        font-weight: 500;
+                        font-size: 28px;
+                        margin-bottom: 10px;
+                    }
+
+                    p{
+                        font-weight: 100;
+                        padding-bottom: 25px;
+                    }
+
+                    a{
+                        color: $black;
+                        background-color: $darkestpurple;
+                        padding:10px 20px 10px 20px;
+                        text-decoration: none;
+                        text-align: center;
                     }
 
                 }

@@ -324,6 +324,7 @@ template {
 ============= */
 .large-images {
   width: 100%;
+  display: block;
 }
 
 .container {
@@ -357,6 +358,10 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -394,9 +399,51 @@ header .content {
   padding: 15px 0px;
 }
 
+header {
+  background-color: #000;
+  color: white;
+}
+header .content div {
+  margin: 20px 0 20px 0px;
+}
+@media (min-width: 768px) {
+  header .content div {
+    margin: 25px 0 25px 0px;
+  }
+}
+header .content img {
+  width: 125px;
+  padding-right: 0.5ren;
+}
+@media (min-width: 992px) {
+  header .content img {
+    width: 230px;
+    padding-right: 1ren;
+  }
+}
+header .content h1 {
+  display: none;
+  color: #000;
+}
+@media (min-width: 768px) {
+  header .content h1 {
+    display: inline-block;
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  header .content h1 {
+    font-size: 36px;
+  }
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #5D5A88;
+  padding-top: 20px;
+}
 footer .container {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -426,6 +473,7 @@ footer .container .phone3 {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "locations newsletter" "locations follow";
+    gap: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -434,19 +482,110 @@ footer .container .phone3 {
     grid-template-areas: "locations newsletter follow";
   }
 }
+footer .content h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+footer .content .locations ul, footer .content .follow ul {
+  list-style: none;
+  padding: 0;
+}
+footer .content .locations ul img, footer .content .follow ul img {
+  padding-right: 10px;
+}
+footer .content .locations ul h5, footer .content .follow ul h5 {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+footer .content .locations ul p, footer .content .follow ul p {
+  font-weight: 200;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+footer .content .locations ul p span, footer .content .follow ul p span {
+  display: inline-block;
+}
+footer .content .locations ul a, footer .content .follow ul a {
+  color: #ADB5BD;
+}
+footer .content .locations ul .border-bottom, footer .content .follow ul .border-bottom {
+  border-bottom: 2px solid #ADB5BD;
+  margin: 25px 0 25px 0;
+}
+footer .content .locations h4 {
+  color: #ADB5BD;
+}
 @media (min-width: 768px) {
   footer .content .locations {
     grid-area: locations;
   }
+}
+footer .content .locations ul li {
+  color: #ADB5BD;
+}
+footer .content .newsletter h4 {
+  color: #ADB5BD;
 }
 @media (min-width: 768px) {
   footer .content .newsletter {
     grid-area: newsletter;
   }
 }
+footer .content .newsletter form {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: end;
+}
+footer .content .newsletter form input {
+  width: 100%;
+  background-color: #ADB5BD;
+  color: #2A3036;
+  padding: 15px 10px 15px 10px;
+  margin: 20px 0 20px 0;
+}
+footer .content .newsletter form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+*/
+  color: #000;
+  opacity: 1;
+}
+footer .content .newsletter form ::-ms-input-placeholder { /* Microsoft Edge*/
+  color: #ADB5BD;
+}
+footer .content .newsletter form button {
+  color: #000;
+  background-color: #ADB5BD;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+footer .content .follow h4 {
+  color: #ADB5BD;
+}
 @media (min-width: 768px) {
   footer .content .follow {
     grid-area: follow;
+  }
+}
+@media (min-width: 992px) {
+  footer .content .follow {
+    text-align: right;
+  }
+}
+footer .content .follow ul li {
+  display: inline-block;
+}
+footer .content .follow ul li a {
+  color: #5D5A88;
+}
+footer .content .follow ul li a i {
+  font-size: 30px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  footer .content .follow ul li:last-of-type a i {
+    padding-right: 0;
   }
 }
 
@@ -457,6 +596,19 @@ footer .content .content-spacing {
 /* =============
     hero
 ============= */
+.hero img {
+  display: block;
+}
+.hero .hero-content {
+  color: #000;
+}
+.hero .hero-content a {
+  color: black;
+  text-decoration: none;
+}
+.hero .hero-content a img {
+  display: inline-block;
+}
 @media (min-width: 768px) {
   .hero .hero-content {
     display: grid;
@@ -468,10 +620,54 @@ footer .content .content-spacing {
     grid-template-columns: 50% 50%;
   }
 }
+.hero .hero-content .container .content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "div link";
+}
+.hero .hero-content .container .content .information {
+  grid-area: div;
+}
+.hero .hero-content .container .content a {
+  grid-area: link;
+  justify-self: end;
+  align-self: center;
+}
+.hero .hero-content .container .content a span {
+  display: none;
+}
+@media (min-width: 992px) {
+  .hero .hero-content .container .content a span {
+    display: inline-block;
+  }
+}
+.hero .hero-content .hero-content-left.container {
+  background-color: #ADABC3;
+  padding: 10px;
+}
 @media (min-width: 992px) {
   .hero .hero-content .hero-content-left.container {
     grid-template-columns: auto auto 16px;
   }
+}
+.hero .hero-content .hero-content-left.container p {
+  font-weight: 100;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.hero .hero-content .hero-content-left.container h2 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .hero .hero-content .hero-content-left.container h2 {
+    font-size: 24px;
+  }
+}
+.hero .hero-content .hero-content-right.container {
+  background-color: #E7E6F2;
+  padding: 10px;
 }
 @media (min-width: 992px) {
   .hero .hero-content .hero-content-right.container {
@@ -482,6 +678,14 @@ footer .content .content-spacing {
 /* =============
     divider 
 ============= */
+.divider {
+  margin: 15px 0 0 0;
+}
+@media (min-width: 768px) {
+  .divider {
+    margin: 30px 0 30px 0;
+  }
+}
 @media (min-width: 768px) {
   .divider {
     display: grid;
@@ -504,13 +708,17 @@ footer .content .content-spacing {
     grid-template-columns: 16px auto 16px;
   }
 }
+.divider .container.box-1 {
+  margin-bottom: 15px;
+}
 @media (min-width: 768px) {
   .divider .container.box-1 {
     grid-area: box-1;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
-  .divider .container.box2 {
+  .divider .container.box-2 {
     grid-area: box-2;
   }
 }
@@ -518,20 +726,44 @@ footer .content .content-spacing {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "h2 img" "a img";
+  background-color: #F2F1FA;
+  color: #fff;
+  padding: 20px;
 }
 .divider .container .content h2 {
-  grid-template-columns: h2;
+  color: black;
+  grid-area: h2;
+  align-self: center;
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  .divider .container .content h2 {
+    font-size: 28px;
+  }
 }
 .divider .container .content a {
   grid-area: a;
+  align-self: end;
+  color: #000;
+  background-color: #5D5A88;
+  padding: 10px;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
 }
 .divider .container .content img {
   grid-area: img;
+  justify-self: end;
+  border-radius: 50%;
 }
 
 /* =============
    gallery
 ============= */
+.gallery ul {
+  list-style: none;
+  padding: 0;
+}
 @media (min-width: 768px) {
   .gallery ul {
     display: grid;
@@ -558,9 +790,13 @@ footer .content .content-spacing {
     grid-area: g2;
   }
 }
+.gallery ul li.img-3 {
+  display: none;
+}
 @media (min-width: 1200px) {
-  .gallery ul li.img-2 {
-    grid-area: g2;
+  .gallery ul li.img-3 {
+    display: block;
+    grid-area: g3;
   }
 }
 
@@ -577,30 +813,94 @@ footer .content .content-spacing {
 /* =============
     search
 ============= */
+.search {
+  margin: 25px 0 25px 0;
+}
+.search .content form {
+  display: flex;
+}
+.search .content form input {
+  font-weight: 100;
+  color: #93A8AC;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #93A8AC;
+}
+@media (min-width: 768px) {
+  .search .content form input {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .search .content form input {
+    font-size: 35px;
+  }
+}
+.search .content form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #93A8AC;
+  opacity: 1;
+}
+.search .content form ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #93A8AC;
+}
+.search .content form button {
+  background-color: #ADABC3;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 7.5px 12.5px 7.5px 12.5px;
+}
+@media (min-width: 768px) {
+  .search .content form button {
+    padding: 16px 15px 16px 15px;
+  }
+}
+.search .content form button img {
+  width: 25px;
+}
+@media (min-width: 768px) {
+  .search .content form button img {
+    width: 30px;
+  }
+}
+
 /* =============
     what's new
 ============= */
+.whats-new {
+  margin: 0 0 20px 0;
+}
 @media (min-width: 768px) {
-  .new ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .whats-new {
+    margin: 30px 0 40px 0;
   }
 }
-
-@media (min-width: 992px) {
-  .new ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (min-width: 1200px) {
-  .new ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .whats-new {
+    margin: 50px 0 60px 0;
   }
 }
-
+.whats-new .whats-new-title h2 {
+  font-size: 20px;
+  color: #637275;
+  padding: 10px 0 10px 0;
+}
+@media (min-width: 768px) {
+  .whats-new .whats-new-title h2 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .whats-new .whats-new-title h2 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .whats-new .whats-new-title h2 {
+    font-size: 40px;
+  }
+}
 @media (min-width: 768px) {
   .whats-new .whats-new-articles {
     display: grid;
@@ -618,47 +918,76 @@ footer .content .content-spacing {
     grid-template-columns: auto 1320px auto;
   }
 }
+.whats-new .whats-new-articles ul.article-grid {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 15px;
+}
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles ul {
+  .whats-new .whats-new-articles ul.article-grid {
+    grid-area: articles;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-area: articles;
     grid-template-areas: "a1 a1 a2 a2" "a3 a3 a4 a4" ". a5 a5 .";
   }
 }
 @media (min-width: 992px) {
-  .whats-new .whats-new-articles ul {
+  .whats-new .whats-new-articles ul.article-grid {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "a1 a1 a2 a2 a3 a3" ". a4 a4 a5 a5 .";
   }
 }
+.whats-new .whats-new-articles ul.article-grid li {
+  background-color: #F8F9FA;
+}
+.whats-new .whats-new-articles ul.article-grid li .container {
+  padding: 15px 0 35px 0;
+}
 @media (min-width: 1200px) {
-  .whats-new .whats-new-articles ul li .container {
+  .whats-new .whats-new-articles ul.article-grid li .container {
     grid-template-columns: 15 px auto 15 px;
   }
 }
+.whats-new .whats-new-articles ul.article-grid li .container h3 {
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.whats-new .whats-new-articles ul.article-grid li .container p {
+  font-weight: 100;
+  padding-bottom: 25px;
+}
+.whats-new .whats-new-articles ul.article-grid li .container a {
+  color: #000;
+  background-color: #5D5A88;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+}
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles ul li.article-1 {
+  .whats-new .whats-new-articles ul.article-grid li.article-1 {
     grid-area: a1;
   }
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles ul li.article-2 {
+  .whats-new .whats-new-articles ul.article-grid li.article-2 {
     grid-area: a2;
   }
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles ul li.article-3 {
+  .whats-new .whats-new-articles ul.article-grid li.article-3 {
     grid-area: a3;
   }
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles ul li.article-4 {
+  .whats-new .whats-new-articles ul.article-grid li.article-4 {
     grid-area: a4;
   }
 }
 @media (min-width: 768px) {
-  .whats-new .whats-new-articles ul li.article-5 {
+  .whats-new .whats-new-articles ul.article-grid li.article-5 {
     grid-area: a5;
   }
 }

@@ -3,6 +3,9 @@
 ============= */
 footer{
 
+    background-color: $darkestpurple;
+    padding-top: 20px;
+
 
     .container{
         display:grid;
@@ -59,7 +62,8 @@ footer{
             grid-template-columns: 50% auto;
             grid-template-areas:
             "locations newsletter"
-            "locations follow"
+            "locations follow";
+            gap: 20px;
         }
 
         @include lg{
@@ -68,21 +72,147 @@ footer{
             "locations newsletter follow" ;
         }
 
+        h4{
+            font-weight: 400;
+            font-size: 20px;
+            color: white;
+        }
+
+        .locations, .follow{
+            ul{
+                list-style: none;
+                padding: 0;
+
+                img{
+                    padding-right: 10px;
+                }
+
+                h5{
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+
+                p{
+                    font-weight: 200;
+                    font-size: 12px;
+                    margin-bottom: 15px;
+                    //display: flex;
+
+                    span{
+                        display: inline-block;
+                    }
+
+                }
+
+                a{
+                    color: $footergray;
+                }
+
+                .border-bottom{
+                    border-bottom: 2px solid $footergray;
+                    margin: 25px 0 25px 0;
+                }
+
+
+            }
+        }
+
         .locations{
+
+            h4{
+                color:$footergray;
+            }
             @include md{
                 grid-area: locations;
+            }
+
+            ul{
+                li{
+                    color: $footergray;
+                }
             }
         }
 
         .newsletter{
+
+            h4{
+                color: $footergray;
+            }
             @include md{
                 grid-area: newsletter;
+            }
+
+            form{
+                display: flex;
+                flex-flow: wrap;
+                justify-content: end;
+
+                input{
+                    width:100%;
+                    background-color: $footergray;
+                    color: $darkestgray;
+                    padding: 15px 10px 15px 10px;
+                    margin: 20px 0 20px 0;
+                }
+
+                ::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+*/
+                    color: $black;
+                    opacity: 1;
+                }
+
+                ::-ms-input-placeholder{ /* Microsoft Edge*/
+                    color: $footergray;
+                }
+
+                button{
+                    color: $black;
+                    background-color: $footergray;
+                    padding: 10px 20px 10px 20px;
+                    text-decoration: none;
+                    text-align: center;
+                    border: none;
+                }
             }
         }
 
         .follow{
+
+            h4{
+                color: $footergray;
+            }
             @include md{
                 grid-area: follow;
+            }
+
+            @include lg{
+                text-align: right;
+
+            }
+
+            ul li{
+                display: inline-block;
+
+                a{
+                    color: $darkestpurple;
+
+                    i{
+                        font-size: 30px;
+                        padding-right: 15px;
+
+                    }
+                }
+
+                @include lg{
+
+                    &:last-of-type{
+                        a i{
+                            padding-right: 0;
+                        }
+                    }
+
+
+                }
             }
         }
     }

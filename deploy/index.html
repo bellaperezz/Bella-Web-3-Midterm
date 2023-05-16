@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Midterm</title>
   </head>
 
   <body>
+    <!--header-->
+    
     <header class="container">
 
       <div class="content">
@@ -22,11 +27,11 @@
     </header>
 
     <!--Search-->
-    <section class="container">
+    <section class="search container">
       <div class="content">
         <form action="#">
          <input type="text" placeholder="Search Our Inventory">
-          <button> Search Icon</button>
+          <button><img src="img/search.svg" alt= "search icon"></button>
         </form>
       </div>
     </section>
@@ -42,29 +47,29 @@
       <div class="hero-content">
 
         <!--box1-->
-        <div class="hero-content-left container content-spacing">
+        <div class="hero-content-left container">
           <div class="content">
 
-            <div>
+            <div class="information">
               <h2>Shark Stratos Vacuums</h2>
               <p>Pick up dirt, dust, hair and more with ease</p>
             </div>
 
-            <a href="#">Details <img src="img/arrow.svg" alt="arrow icon"></a>
+            <a href="#"><span>Details</span> <img src="img/arrow.svg" alt="arrow icon"></a>
 
           </div>
         </div>
         <!--end box 1-->
 
         <!--box 2-->
-          <div class="hero-content-right container content-spacing">
+          <div class="hero-content-right container">
             <div class="content">
 
-              <div>
-                <h1>View more of our products here!</h1>
+              <div class="information">
+                <h2>View more of our products here!</h2>
               </div>
 
-              <a href="#">Details <img src="img/arrow.svg" alt="arrow icon"></a>
+              <a href="#"><span>Details</span> <img src="img/arrow.svg" alt="arrow icon"></a>
             </div>
           </div>
        <!--end box 2-->
@@ -83,7 +88,7 @@
 
           <h2> Need a new vac?</h2>
           <a href="#">Start Here</a>
-          <img src="img/image_1.png" alt="little girl and vacuum">
+          <img src="img/icon-.svg" alt="little girl and vacuum">
 
          </div>
       </div>
@@ -96,7 +101,7 @@
 
           <h2> Need parts? </h2>
           <a href="#"> Order Here</a>
-          <img src="img/image_5.png" alt="vacuum parts">
+          <img src="img/icon.svg" alt="vacuum parts">
 
         </div>
       </div>
@@ -140,18 +145,16 @@
         </div>
       </div>
     </div>
-      
+    
    
-
-    <section class="new container">
-      <section class="content">
+  
 
         <div class="whats-new-articles">
 
           <ul class="article-grid">
 
             <li class="article-1"> 
-              <img class="large-images" src="img/image_17.png" alt="flexstyle"> 
+              <img class="large-images" src="img/image_17.svg" alt="flexstyle"> 
               <div class="container content-spacing">
                 <div class="content">
                   <h3> FlexStyle™ </h3>
@@ -167,7 +170,7 @@
           
 
             <li class="article-2"> 
-              <img class="large-images" src="img/gallery-1-opt-2.png" alt="Shark® Vacuum and Mop Robot"> 
+              <img class="large-images" src="img/gallery-1-opt-2.svg" alt="Shark® Vacuum and Mop Robot"> 
               <div class="container content-spacing">
                 <div class="content">
                   <h3> Shark® Vacuum and Mop Robot </h3>
@@ -182,7 +185,7 @@
           
 
             <li class="article-3"> 
-              <img class="large-images" src="img/gallery-1-opt-3.png" alt="Shark® Stratos"> 
+              <img class="large-images" src="img/gallery-1-opt-3.svg" alt="Shark® Stratos"> 
               <div class="container content-spacing">
                 <div class="content">
                   <h3> Shark® Stratos </h3>
@@ -197,7 +200,7 @@
             
 
             <li class="article-4"> 
-              <img class="large-images" src="img/gallery-1-opt-1.png" alt="Two brushrolls. All floors."> 
+              <img class="large-images" src="img/gallery-1-opt-1.svg" alt="Two brushrolls. All floors."> 
               <div class="container content-spacing">
                 <div class="content">
                   <h3> Two brushrolls. All floors. </h3>
@@ -212,7 +215,7 @@
             
 
             <li class="article-5"> 
-              <img class="new large-images" src="img/gallery-1-opt.png" alt="Tackle hair wrap head-on."> 
+              <img class="new large-images" src="img/gallery-1-opt.svg" alt="Tackle hair wrap head-on."> 
               <div class="container content-spacing">
                 <div class="content">
                   <h3> Tackle hair wrap head-on. </h3>
@@ -227,13 +230,11 @@
             
           </ul>
         </div>
-      </section>
-
-    </section>
+     
 
       <!--footer-->
 
-        <footer class="container content-spacing">
+        <footer class="container">
           <div class="content">
 
             <div class="locations">   
@@ -242,20 +243,15 @@
 
               <ul>
                 
-                  <li class="content-spacing">
+                  <li class="border-bottom">
 
                     <h5> Connecticut</h5>
-                    <p><img src= "img/Shape-1.png" 
-                    alt="location icon"> <span>20 
-                    Tolland Turnpike<br> Manchester, CT
-                    06042-1763</span></p>
-                    <p><img src="img/shape.svg"
-                    alt="phone icon"> <a href="#"> (800)
-                    829-4161</a></p>
-            
+                    <p><img src= "img/Shape-1.png" alt="location icon"> <span>20 Tolland Turnpike<br> Manchester, CT 06042-1763</span></p>
+                    <p><img src="img/shape.svg" alt="phone icon"> <a href="#"> (800) 829-4161</a></p>
+
                   </li>
 
-                  <li class="content-spacing">
+                  <li class="border-bottom">
 
                     <h5> Massachusetts</h5>
                     <p><img src="img/Shape-1.png"
@@ -272,12 +268,38 @@
               </ul>
 
             </div>
-            <div> 
+            <div class="newsletter"> 
+
               <h4> Newsletter Sign Up</h4>
-                <form action="#">
-                  <input type="text" placeholder="Email address">
-                  <button> Sign Up </button>
-                </form>
+              <form action="#">
+                <input type="text" placeholder="Email address">
+                <button> Sign Up </button>
+              </form>
+
+            </div>
+
+            <div class="follow">
+
+              <h4>Follow Us</h4>
+
+              <ul>
+                <li>
+                  <a href="#"><img src= "img/youtube.svg" alt="youtube icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/twitter.svg" alt="twitter icon">
+                 </a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/instagram.svg" alt= "instagram icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/facebook.svg" alt="facebook icon">
+                  </a>
+                </li>
+              </ul>
 
             </div>
          </div>
@@ -286,5 +308,6 @@
         </footer>
        
     <script src="js/scripts-min.js"></script>
+  </section>
   </body>
 </html>

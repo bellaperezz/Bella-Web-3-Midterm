@@ -221,6 +221,16 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/facebook.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/gallery-1-opt-1.png" : {
       "ft" : 32768,
       "iS" : 60406,
@@ -234,18 +244,38 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/gallery-1-opt-1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/gallery-1-opt-1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/gallery-1-opt-2.png" : {
       "ft" : 32768,
       "iS" : 51116,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery-1-opt-2.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/img\/gallery-1-opt-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/gallery-1-opt-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/gallery-1-opt-3.png" : {
       "ft" : 32768,
@@ -260,6 +290,16 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/gallery-1-opt-3.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/gallery-1-opt-3.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/gallery-1-opt.png" : {
       "ft" : 32768,
       "iS" : 71919,
@@ -272,6 +312,16 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/img\/gallery-1-opt.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/gallery-1-opt.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/girlnvacuum.png" : {
       "ft" : 32768,
@@ -309,11 +359,21 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/image_1.png" : {
+    "\/deploy\/img\/icon-.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icon-1.png" : {
       "ft" : 32768,
-      "iS" : 20114,
+      "iS" : 14392,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/image_1.png",
+      "oAP" : "\/deploy\/img\/icon-1.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -321,25 +381,45 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/img\/icon-1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icon.png" : {
+      "ft" : 32768,
+      "iS" : 8473,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/image_2.png" : {
       "ft" : 32768,
       "iS" : 734656,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/image_2.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/deploy\/img\/image_5.png" : {
-      "ft" : 32768,
-      "iS" : 12613,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/image_5.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -367,12 +447,42 @@
       "oA" : 0,
       "oAP" : "\/deploy\/img\/image_17.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/img\/image_17.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/image_17.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/instagram.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/instagram.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/search.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/search.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/Shape-1.png" : {
       "ft" : 32768,
@@ -415,6 +525,26 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/Shape.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/youtube.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/youtube.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
